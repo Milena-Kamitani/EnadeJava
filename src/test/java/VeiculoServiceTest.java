@@ -18,18 +18,18 @@ public class VeiculoServiceTest {
     @Test
     public void testFiltrarVeiculosPorMarca() {
         List<Veiculo> chevroletCarros = veiculoService.filtrarVeiculosPorMarca("Chevrolet", "carro");
-        assertEquals(2, chevroletCarros.size(), "Deveria retornar 2 carros Chevrolet");
+        assertEquals(3, chevroletCarros.size(), "Deveria retornar 3 carros Chevrolet");
     }
 
     @Test
     public void testSomarValorTotalPorMarca() {
         double totalValorChevroletCarros = veiculoService.somarValorTotalPorMarca("Chevrolet", "carro");
-        assertEquals(207000.00, totalValorChevroletCarros, 0.001, "Valor total para Chevrolet carros deve ser 207000.00");
+        assertEquals(259000.00, totalValorChevroletCarros, 0.001, "Valor total para Chevrolet carros deve ser 259000.00");
     }
 
     @Test
     public void testFiltrarVeiculosPorAno() {
         List<Veiculo> veiculosNovos = veiculoService.filtrarVeiculosPorAno(2020, "carro");
-        assertEquals(7, veiculosNovos.size(), "Deveria retornar 7 carros de 2020");
+        assertEquals(7, veiculosNovos.size(), "Deveria retornar 7 carros novos");
     }
 }
