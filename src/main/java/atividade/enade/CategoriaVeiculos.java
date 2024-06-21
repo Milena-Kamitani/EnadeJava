@@ -1,4 +1,5 @@
 package atividade.enade;
+
 import java.util.List;
 
 public class CategoriaVeiculos {
@@ -20,6 +21,4 @@ public class CategoriaVeiculos {
     public void setUsados(List<Veiculo> usados) {
         this.usados = usados;
     }
-
-    // Getters e Setters (não mostrados para brevidade)
 }
